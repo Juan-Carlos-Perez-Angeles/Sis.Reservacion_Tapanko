@@ -1,1 +1,83 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background: radial-gradient(circle at 100% 30%, rgb(101, 101, 101) 0%, rgba(120, 120, 120, 30%) calc(100% + 50%)) no-repeat;
+  font-family: 'Chango', cursive;
+}
+
+@media screen and (orientation: portrait){
+  .title-login {
+    font-size: 10em;
+  }
+
+  .abs-right {
+    margin-left: calc(100% - 80%);
+  }
+}
+
+.title-login{
+  font-size: 10rem;
+  color: #D4AF37;
+  text-align: center;
+  margin-top: 3rem;
+  font-weight: bold;
+}
+
+.input-login {
+  background-color: rgba(255, 255, 255, 12%);
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  font-size: 1.5em;
+  padding: 1rem;
+  margin: 3rem auto 3rem auto;
+  width: 80%;
+  font-weight: bold;
+  color: white;
+}
+
+.input-login:focus {
+  border: 1px solid white;
+}
+
+.input-login::placeholder{
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgba(192,192,192,50%);
+  padding: 1rem;
+}
+
+.txt-create-acount{
+  font-size: 1.5em;
+  color: #D4AF37;
+  font-weight: bold;
+  margin-right: calc(100% - 90%);
+}
+
+.btn-login {
+  background-color: rgba(255, 255, 255, 15%);
+  border: 1px solid transparent;
+  border-radius: 450px;
+  font-size: 1.5em;
+  margin: 1.5rem;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  color: #D4AF37;
+  font-weight: bold;
+}
+
+.btn-login:hover {
+  border: 1px solid white;
+}
+
+.abs-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.abs-right {
+  margin-left: calc(100% - 40%);
+}
+
+.div-btn-login{
+  padding-top: 5rem;
+}
