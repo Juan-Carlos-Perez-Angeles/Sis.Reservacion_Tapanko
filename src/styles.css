@@ -1,1 +1,72 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-image: radial-gradient(circle farthest-corner at 95% 50%, rgba(84,84,84,1), rgba(192,192,192,1) calc(100% + 50%));
+  font-family: "Insaniburger", serif;
+}
+
+.title-login {
+  font-size: calc(3em + 7vw);
+  color: #D4AF37;
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 2vh;
+  font-weight: bold;
+}
+
+.input-login {
+  background-color: rgba(255, 255, 255, 12%);
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  font-size: calc(1em + 0.5vw);
+  padding: 2vh;
+  margin: 6vh auto 6vh auto;
+  width: 80%;
+  font-weight: bold;
+  color: white;
+}
+
+.input-login:focus {
+  border: 1px solid white;
+}
+
+.input-login::placeholder{
+  font-size: calc(1em + 0.5vw);
+  font-weight: bold;
+  color: rgba(192,192,192,50%);
+  padding: 1vh;
+}
+
+.txt-create-acount{
+  font-size: calc(1em + 0.5vw);
+  color: #D4AF37;
+  font-weight: bold;
+  margin-right: calc(100% - 90%);
+}
+
+.btn-login {
+  background-color: rgba(255, 255, 255, 15%);
+  border: 1px solid transparent;
+  border-radius: 50px;
+  font-size: calc(1em + 0.5vw);
+  margin: calc(0.5em + 1vh);
+  padding: 0.5rem 4vh 0.5rem 4vh;
+  color: #D4AF37;
+  font-weight: bold;
+}
+
+.btn-login:hover {
+  border: 1px solid white;
+}
+
+.abs-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-btn-login {
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: row-reverse;
+}
