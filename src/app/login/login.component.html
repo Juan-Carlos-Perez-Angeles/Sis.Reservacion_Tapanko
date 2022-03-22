@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        html{
+            height: 100%;
+        }
+        body{
+            background: linear-gradient(to right, rgb(226, 218, 220), rgb(117, 108, 108)); 
+            height: 100%;
+        }
         #padre{
             height: 500px;
-            position: relative;
         }
         #hijo{
-            width: 400px;
-            height: 400px;
+            width: 500px;
+            height: 500px;
             /* Para Centrar el div */
             position: absolute;
             left: 50%;
@@ -22,12 +28,8 @@
 
         }
         h1{
+            text-align: center;
             font-size: 100px;
-            margin-bottom: 0px;
-        }
-        h2{
-            font-size: 50px;
-            margin: 0px 0px;
         }
         p{
             margin: 0px 0px;
@@ -35,11 +37,12 @@
     </style>
 </head>
 <body>
-    <div id="padre">
-        <div id="hijo">
+    <div id="padre" style="border: solid black 1px;">
+        <div id="hijo" style="border: solid black 1px;">
             <h1>TAPANKO</h1>
             <form action="get">
                 <input type="text" name="Usuario" id="Usuario" placeholder="USUARIO">
+                <br>
                 <input type="text" name="Contraseña" id="Contraseña" placeholder="CONTRASEÑA">
             </form>
         </div>
