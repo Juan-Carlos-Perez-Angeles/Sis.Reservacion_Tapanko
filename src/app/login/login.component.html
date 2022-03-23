@@ -1,51 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;500&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        html{
-            height: 100%;
-        }
-        body{
-            background: linear-gradient(to right, rgb(226, 218, 220), rgb(117, 108, 108)); 
-            height: 100%;
-        }
-        #padre{
-            height: 500px;
-        }
-        #hijo{
-            width: 500px;
-            height: 500px;
-            /* Para Centrar el div */
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%,-50%);
-            -webkit-transform: translate(-50%,-50%);
-
-        }
-        h1{
-            text-align: center;
-            font-size: 100px;
-        }
-        p{
-            margin: 0px 0px;
-        }
+      html {
+        height: 100%;
+      }
+      body {
+        background: linear-gradient(
+          to right,
+          rgb(226, 218, 220),
+          rgb(117, 108, 108)
+        );
+        height: 100%;
+      }
+      #padre {
+        height: 500px;
+      }
+      #hijo {
+        width: 500px;
+        height: 500px;
+        /* Para Centrar el div */
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+      }
+      h1 {
+        text-align: center;
+        font-family: "Inter", sans-serif;
+        font-size: 100px;
+        background: -webkit-linear-gradient(rgb(186,120,2), rgb(245, 208, 111));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      p {
+        margin: 0px 0px;
+      }
     </style>
-</head>
-<body>
-    <div id="padre" style="border: solid black 1px;">
-        <div id="hijo" style="border: solid black 1px;">
-            <h1>TAPANKO</h1>
-            <form action="get">
-                <input type="text" name="Usuario" id="Usuario" placeholder="USUARIO">
-                <br>
-                <input type="text" name="Contraseña" id="Contraseña" placeholder="CONTRASEÑA">
-            </form>
-        </div>
+  </head>
+  <body>
+    <div id="padre" style="border: solid black 1px">
+      <div id="hijo" style="border: solid black 1px">
+        <h1>TAPANKO</h1>
+        <form action="get">
+          <input
+            type="text"
+            name="Usuario"
+            id="Usuario"
+            placeholder="USUARIO"
+          />
+          <br />
+          <input
+            type="text"
+            name="Contraseña"
+            id="Contraseña"
+            placeholder="CONTRASEÑA"
+          />
+        </form>
+      </div>
     </div>
-</body>
+  </body>
 </html>
