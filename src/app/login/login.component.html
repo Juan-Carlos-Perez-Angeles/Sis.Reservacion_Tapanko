@@ -36,23 +36,59 @@
         transform: translate(-50%, -50%);
         -webkit-transform: translate(-50%, -50%);
       }
-      h1 {
-        text-align: center;
+      .Dorado{
         font-family: "Inter", sans-serif;
-        font-size: 100px;
-        background: -webkit-linear-gradient(rgb(186,120,2), rgb(245, 208, 111));
+        background: -webkit-linear-gradient(
+          rgb(186, 120, 2),
+          rgb(245, 208, 111)
+        );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
-      p {
-        margin: 0px 0px;
+      h1 {
+        text-align: center;
+        font-size: 100px;
+      }
+      ::placeholder {
+        color: rgb(226, 218, 220);
+        font-family: "Inter", sans-serif;
+        font-size: 1.5em;
+      }
+      form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      form input {
+        margin-bottom: 0px;
+        text-align: center;
+        width: 90%;
+        height: 30px;
+        margin-bottom: 3px;
+        border: none;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+      form button{
+          background: none;
+          border: none;
+      }
+      #NuevoUsuario, #Ingresar{
+        font-size: 1.5em;
+        text-align: center;
+        width: 45%;
+        height: 30px;
+        margin-bottom: 3px;
+        border-radius: 20px;
       }
     </style>
   </head>
   <body>
-    <div id="padre" style="border: solid black 1px">
-      <div id="hijo" style="border: solid black 1px">
-        <h1>TAPANKO</h1>
+    <div id="padre">
+      <div id="hijo">
+        <h1 class="Dorado">TAPANKO</h1>
         <form action="get">
           <input
             type="text"
@@ -60,13 +96,17 @@
             id="Usuario"
             placeholder="USUARIO"
           />
-          <br />
           <input
             type="text"
             name="Contraseña"
             id="Contraseña"
             placeholder="CONTRASEÑA"
           />
+          <button class="Dorado" style="font-size: 20px; text-align: right;" id="Olvidado">¿Olvidaste tu contraseña?</button>
+          <div style="width: 100%; padding-left:50px;">
+            <button class="Dorado" id="NuevoUsuario">Nuevo Usuario</button>
+            <button class="Dorado" id="Ingresar" type="submit">Ingresar</button>
+          </div>
         </form>
       </div>
     </div>
